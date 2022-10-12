@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Bounce</title>
+    <link rel="stylesheet" href="design/style.css" />
+    <script type="module" src="source/Main.js"></script>
+</head>
+
+<body>
+    <div id="container" class="mainScreen">
+        <div class="count">0</div>
+        <div class="bricks"></div>
+        <div class="board">
+            <div class="ball"></div>
+            <div class="ship"></div>
+            <div class="tail"></div>
+        </div>
+
+        <div class="messages">
+            <div class="bg"></div>
+            <div class="text">
+                <h2>Bounce</h2>
+                <p>Selecione o jogo</p>
+            </div>
+
+            <div class="main">
+                <ul>
+                    <li><a href="#" data-action="play" data-mode="speed">Ra<u>p</u>idez</a></li>
+                    <li><a href="#" data-action="play" data-mode="random"><u>A</u>leatorio</a></li>
+                    <li><a href="#" data-action="play" data-mode="bricks">Tijo<u>lo</u>s</a></li>
+                    <li><a href="#" data-action="highScores">P<u>o</u>ntuação</a></li>
+                    <li><a href="#" data-action="help"><u>A</u>juda</a></li>
+                </ul>
+                <div class="audio" data-action="sound">
+                    <div class="waves">
+                        <div></div><div></div>
+                        <div></div><div></div>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+            <ul class="pause">
+                <li><a href="#" data-action="endPause"><u>C</u>ontinue</a></li>
+                <li><a href="#" data-action="finishGame"><u>N</u>ovo Jogo</a></li>
+            </ul>
+
+            <div class="input">
+                <input type="text" placeholder="Name" /> &nbsp;
+                <a href="#" data-action="save"><u>O</u>k</a>
+                <a class="restart" href="#" data-action="mainScreen"><u>N</u>ovo Jogo</a>
+            </div>
+
+            <div class="high">
+                <div class="scores"></div>
+                <div class="none">Nenhuma pontuação disponível</div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#" data-action="showScores" data-mode="speed">Sp<u>e</u>ed</a></li>
+                        <li><a href="#" data-action="showScores" data-mode="random"><u>R</u>andom</a></li>
+                        <li><a href="#" data-action="showScores" data-mode="bricks">Bric<u>k</u>s</a></li>
+                        <li><a href="#" data-action="mainScreen"><u>B</u>ack</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="controls">
+                <ol>
+                    <li>Use o mouse ou as setas esquerda e direita para mover o navio.</li>
+                    <li>Clique, Enter ou Espaço fará com que a bola comece a se mover.</li>
+                    <li>Clique ou P irá pausar o jogo.</li>
+                    <li>M irá ativar e desativar o som.</li>
+                    <li>Use os links ou teclas (letras sublinhadas) para navegar pelas telas.</li>
+                </ol>
+                <a href="#" data-action="mainScreen"><u>B</u>ack</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

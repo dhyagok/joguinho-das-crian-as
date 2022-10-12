@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="design/style.css" />
+    <script type="module" src="source/Main.js"></script>
+</head>
+
+<body>
+    <div id="container" class="mainScreen">
+        <div class="board"></div>
+        <div class="game">
+            <div class="start"></div>
+            <div class="snake"></div>
+            <div class="food">
+                <div class="foodShadow">
+                    <div></div><div></div>
+                    <div></div><div></div>
+                </div>
+                <div class="foodBody">
+                    <div></div><div></div>
+                    <div></div><div></div>
+                </div>
+            </div>
+            <div class="score"></div>
+            <div class="time"></div>
+            <div class="level"></div>
+        </div>
+
+        <div class="messages">
+            <div class="text">
+                <h2>Snake</h2>
+                <p>Selecione o nivel</p>
+            </div>
+
+            <div class="main help">
+                <div class="demo"></div>
+                <ul>
+                    <li><a href="#" data-action="play" data-level="1">Faci<u>l</u></a></li>
+                    <li><a href="#" data-action="play" data-level="2">M<u>e</u>dio</a></li>
+                    <li><a href="#" data-action="play" data-level="3">Di<u>f</u>icil</a></li>
+                    <li><a href="#" data-action="play" data-level="4">S<u>u</u>per</a></li>
+                    <li><a href="#" data-action="highScores">P<u>o</u>ntuacao max</a></li>
+                    <li><a href="#" data-action="help"><u>A</u>juda</a></li>
+                    <li><a href="#" data-action="restore">Con<u>t</u>inue</a></li>
+                </ul>
+                <div class="audio" data-action="sound">
+                    <div class="waves">
+                        <div></div><div></div>
+                        <div></div><div></div>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+            <ul class="pause">
+                <li><a href="#" data-action="endPause"><u>C</u>ontinue</a></li>
+                <li><a href="#" data-action="finishGame"><u>N</u>ovo jogo</a></li>
+            </ul>
+
+            <div class="input">
+                <input type="text" placeholder="name" />
+                <a class="submit" href="#" data-action="save"><u>O</u>k</a>
+                <a class="restart" href="#" data-action="newGame"><u>N</u>ovo jogo</a>
+            </div>
+
+            <div class="high">
+                <div class="scores"></div>
+                <div class="none">Nenhuma pontuação disponível</div>
+                <ul>
+                    <li><a href="#" data-action="showScores" data-level="1"><u>F</u>acil</a></li>
+                    <li><a href="#" data-action="showScores" data-level="2"><u>M</u>edium</a></li>
+                    <li><a href="#" data-action="showScores" data-level="3">Difi<u>c</u>il</a></li>
+                    <li><a href="#" data-action="showScores" data-level="4">S<u>u</u>per</a></li>
+                    <li><a href="#" data-action="mainScreen"><u>V</u>oltar</a></li>
+                </ul>
+            </div>
+
+            <div class="controls">
+                <ol>
+                    <li>Use as setas ou as teclas WASD para mover a cobra.</li>
+                    <li>Espaço ou P pausará o jogo.</li>
+                    <li>M irá ativar ou desativar o som.</li>
+                    <li>Use os links ou teclas (letras sublinhadas) para navegar pelas telas.</li>
+                </ol>
+                <a href="#" data-action="mainScreen"><u>V</u>oltar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
